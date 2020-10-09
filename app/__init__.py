@@ -20,7 +20,7 @@ def create_app(config_name):
 	@app.route("/Home")
 	def index():
 		return render_template("index.html")
-		
+
 
 	@app.route("/About")
 	def about():
