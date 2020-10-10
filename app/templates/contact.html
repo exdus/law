@@ -1,0 +1,363 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12">
+						<div class="wrapper px-md-4">
+							<div class="row mb-5">
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Address:</span> <br><small>(Main) Nanyuki bidhaa bora building next to sidian bank <br> (Branch) Timau <br> <i class="fa fa-clock-o" aria-hidden="true"></i> Mon-Fri 8:00am-5:00pm</small> </p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Phone:</span> <br> <a href="#"> +2547 2040 7471</a></p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text"><form action="/message" id="contact-form" method="POST" enctype="text/plain">
+					            <p><span>Email:</span> <a href="#">chweyaassociates@gmail.com</a></p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Website</span> <a href="#">chweyaandassociates.com</a></p>
+					          </div>
+				          </div>
+								</div>
+							</div>
+							<div class="row no-gutters">
+								<div class="col-md-12">
+									<div class="contact-wrap w-100 p-md-5 p-4">
+										<h3 class="mb-4">Contact Us</h3>
+
+
+										<form action="/message" method="POST" id="contact-form" name="contactForm" class="contactForm">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="name">First Name</label>
+														<input type="text" class="form-control" name="first-name" id="first-name" placeholder="First Name">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="name">Last Name</label>
+														<input type="text" class="form-control" name="last-name" id="last-name" placeholder="Last Name">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="email">D.O.B</label>
+														<input type="date" class="form-control" name="dob" id="dob">
+													</div>
+												</div>
+
+												<!--  -->
+
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="bussiness_name">Bussiness Name</label>
+														<input type="text" class="form-contrcontact-form-buttonol" name="bussiness_name" id="bussiness_name" placeholder="Bussiness Name">
+													</div>
+												</div>
+												<div class="col-md-8">
+													<div class="form-group">
+														<label class="label" for="bussiness_adress">Address</label>
+														<input type="text" class="form-control" name="bussiness_adress" id="bussiness_adress" placeholder="Bussiness Adress">
+													</div>
+												</div>
+
+												<!--  -->
+
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="label" for="city">City</label>
+														<input type="text" class="form-control" name="city" id="city" placeholder="city">
+													</div>
+												</div>contact-form-button
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="state">State</label>
+														<input type="text" class="form-control" name="state" id="state" placeholder="state">
+													</div>
+												</div>
+
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="zip">Zip</label>
+														<input type="text" class="form-control" name="zip" id="zip" placeholder="zip">
+													</div>
+												</div>
+
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="h_telephone">Home Telephone</label>
+														<input type="text" class="form-control" name="h_telephone" id="h_telephone" placeholder="City">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="fax">Fax</label>
+														<input type="text" class="form-control" name="fax" id="fax" placeholder="XXX-XXX-XXX">
+													</div>
+												</div>
+
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="email">E-Mail</label>
+														<input type="email" class="form-control" name="email" id="email" placeholder="abc@gxyz.com">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="label" for="employer">Employer</label>
+														<input type="text" class="form-control" name="employer" id="employer" placeholder="Employers Name">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="empl_tel">Eployer Telephone</label>
+														<input type="text" class="form-control" name="empl_tel" id="empl_tel" placeholder="Employers Telephonr">
+													</div>
+												</div>
+
+
+
+												<!--  -->
+
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="#"><strong>Enter Brief Description Of your case</strong></label>
+														<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="A Brief Description of your case."></textarea>
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="papers">Served With Papers</label>
+														<input type="text" class="form-control" name="papers" id="papers" placeholder="Yes / No">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="papers_date">When: </label>
+														<input type="date" class="form-control" name="papers_date" id="papers_date" >
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="court_date">Court Date</label>
+														<input type="date" class="form-control" name="court_date" id="court_date" >
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label class="label" for="judge">Judge</label>
+														<input type="text" class="form-control" name="judge" id="judge" placeholder="Judges Name">
+													</div>
+												</div>
+
+
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="associates">Names of Associated and/or Related Parties</label>
+														<input type="text" class="form-control" name="associates" id="associates" placeholder="Associates and or Parties">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="other_sides_name">Other Side's Name:</label>
+														<input type="text" class="form-control" name="other_sides_name" id="other_sides_name" placeholder="Other Sides Name">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="opposing_counsel">Name of Opposing Counsel</label>
+														<input type="text" class="form-control" name="opposing_counsel" id="opposing_counsel" placeholder="Name of opposing counsel">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<h5>Additional Information</h5>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="spouse">Spouse</label>
+														<input type="text" class="form-control" name="spouse" id="spouse" placeholder="Spouse">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="spouse_employer">Spouse's Employer</label>
+														<input type="text" class="form-control" name="spouse_employer" id="spouse_employer" placeholder="Spouse Employer">
+													</div>
+												</div>
+
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="spouse_phone">Phone</label>
+														<input type="text" class="form-control" name="spouse_phone" id="spouse_phone" placeholder="Spouse Phone">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="refferee">Reffered By</label>
+														<input type="text" class="form-control" name="refferee" id="refferee" placeholder="Who Reffered You To Chweya And Associates?">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="prevous_contacts">Have you or anyone you know been contacted by Chweya And Associates before? Who? ( <small>please provide name, address, and phone number</small> )</label>
+														<input type="text" class="form-control" name="prevous_contacts" id="prevous_contacts" placeholder="Any previous Contacts With us">
+													</div>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="attorney"></label>Do you have or have you spoken to an attorney in this matter? Who? ( <small>please provide name, address, and phone number</small> )</label>
+														<input type="text" class="form-control" name="attorney" id="attorney" placeholder="Any other artorneys on this case">
+													</div>
+												</div>
+												<!--  -->
+
+
+												<div class="col-md-12">
+													<div class="form-group">
+														<input type="submit" id= "contact-form-button" value="Send Message" class="btn btn-primary">
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+										</form>
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Law Firm</a></h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Explore</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Practice Areas</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Cases</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Legal</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Company</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+{% endblock %}
